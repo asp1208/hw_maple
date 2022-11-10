@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="src/index.js" type="module"></script>
+
+    <title>Symbolic diff</title>
+    <style type="text/css">
+        input {
+            height: 20px;
+            margin: 3px auto;
+        }
+
+        select {
+            height: 20px;
+            margin: 3px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Численное дифференцирование</h1>
+    <form>
+        Введите дифференцируемый многочлен: <input type="text" id="first_param" placeholder="4*x^3 + x^2 + x + 1" />
+        <br />
+        Дифференцировать по: <input type="text" id="second_param" placeholder="x" />
+    </form>
+
+    <div>
+        <button id="diff_button">
+            Дифференцировать
+        </button>
+    </div>
+
+    <h1> </h1>
+    <div id="container">
+    </div>
+
+</body>
+
+</html>
